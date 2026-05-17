@@ -1,0 +1,33 @@
+.card-container{
+    width: 18vw;
+    padding: 1rem;
+    color: rgb(48, 48, 48);
+}
+.card-container img{
+    width: 10vw;
+    height: 20vh;
+    object-fit: contain;
+    max-height: 60vh;
+    border-radius: 24px;
+}
+.text-container{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.price{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.category{
+    margin-top: 1rem;
+    font-weight: bold;
+    color: grey;
+}
+.prod-name{
+    margin-top: 0.1rem;
+    font-size: 1.5rem;
+}
+.rating{
+    margin-bottom: 1rem;
+}
