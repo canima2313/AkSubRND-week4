@@ -19,9 +19,11 @@ function ProductContainer({data, query, setQuery}){
                     <Searchbar query={query} setQuery={setQuery}/>
                 </div>
                 <div className='products'>
-                    {filtered.map(product => (
-                        <Card key={product.id} product={product}/>
-                    ))}
+                    {filtered.length === 0 && query ? <p className='no-results'>No products match "{query}"</p>
+                        : filtered.map(product => (
+                            <Card key={product.id} product={product}/>
+                        ))
+                    }
                 </div>
             </section>
         </>

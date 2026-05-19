@@ -28,7 +28,7 @@ function App() {
     <>
       <section className='header'>
         <div className="navbar">
-          <a href="">Products</a>
+          <a href="#prod">Products</a>
           <a href="">Inspiration</a>
           <a href="">Service</a>
           <a href="">Support</a>
@@ -51,7 +51,7 @@ function App() {
         </div>
       </section>
 
-      <section className='product-container'>
+      <section id='prod' className='product-container'>
         <ProductContainer data={data} query={query} setQuery={setQuery}/>
       </section>
     </>
